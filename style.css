@@ -1,0 +1,13 @@
+:root { --ink: #111; --ink-2: #444; --paper: #fff; --red: #eb0000; --rule: #ddd; }
+@media (prefers-color-scheme: dark) { :root { --ink: #f2f2f2; --ink-2: #bbb; --paper: #111; --rule: #333; } }
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--paper); color: var(--ink); font: 17px/1.55 system-ui, -apple-system, "Segoe UI", sans-serif; }
+header { background: #111; color: #fff; padding: 14px 16px; }
+header a { color: #fff; text-decoration: none; font-weight: 700; display: inline-flex; align-items: center; gap: 10px; }
+.mark { background: var(--red); color: #fff; width: 28px; height: 28px; display: inline-grid; place-items: center; font-weight: 800; }
+main { max-width: 680px; margin: 0 auto; padding: 40px 16px 64px; }
+h1 { font-size: 34px; line-height: 1.15; margin: 0 0 12px; }
+h2 { font-size: 20px; margin: 32px 0 8px; padding-top: 16px; border-top: 3px solid var(--ink); }
+p, li { color: var(--ink-2); }
+a { color: inherit; }
+footer { max-width: 680px; margin: 0 auto; padding: 0 16px 40px; font-size: 14px; color: var(--ink-2); }
